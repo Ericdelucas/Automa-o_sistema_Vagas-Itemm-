@@ -142,7 +142,7 @@ def executar():
 
 
     # pegando arquivo da nuvem
-    pyautogui.click(x=933, y=456)
+    pyautogui.click(x=1010, y=463)
     time.sleep(0.5)
     pyautogui.hotkey('enter')
     time.sleep(0.8) 
