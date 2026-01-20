@@ -13,13 +13,7 @@ if keyboard.is_pressed('esc'):  # ou qualquer tecla, como 'q'
     exit()
 
 
-# # while True:
-
-
-# time.sleep(3)
-# x=pyautogui.position()
-# print(x)
-# # time.sleep(0.1)
+# while True:
 
 #_______________________________
 
@@ -37,106 +31,132 @@ def executar():
 # ano=input("digite o ano do arquivo: ")
 
 
-    # time.sleep(3)
-    # x=pyautogui.position()
-    # print(x)
+# time.sleep(3)
+# x=pyautogui.position()
+# print(x)
 
 
+# ________________________________começo da automação_____________________________________
+
+
+
+    # clicar na empressora 
     time.sleep(1)
-    pyautogui.click(x=904, y=753)
+    pyautogui.click(x=1249, y=1063)
 
-
+    # Adicionar pagina
     time.sleep(5)
-
-    # impresora 
-    pyautogui.click(x=941, y=93)
+    pyautogui.click(x=1458, y=103)
 
     # digitalizar
-    time.sleep(1)
-    pyautogui.click(x=941, y=93)
-
     time.sleep(5)
-    pyautogui.click(x=729, y=419)
+    pyautogui.click(x=998, y=572)
 
-    time.sleep(11)
-    pyautogui.click(x=1127, y=138)
+    # Salvar no PC
+    time.sleep(15)
+    pyautogui.click(x=1724, y=147)
+    # colocar o nome do cliente
+    time.sleep(2)
+    pyautogui.click(x=926, y=412)
 
+    #   campo do nome 
+    pyautogui.keyDown('ctrl')   # segura Ctrl
+    pyautogui.press('a')        # aperta 'a' enquanto segura Ctrl
+    pyautogui.keyUp('ctrl')
     time.sleep(1)
     pyautogui.press('backspace')
     time.sleep(0.5)
-    pyautogui.write(nam)
+    pyautogui.write(f'{nam}')
 
-    # ________________________________
 
+    # Salvar nome de cliente 
     time.sleep(2)
-    pyautogui.click(x=710, y=529)
+    pyautogui.click(x=1010, y=683)
 
 
+# # ____________________________________________vasa sitema____________________________________________
 
+#   entrando no sitema vagas
     time.sleep(2)
-    pyautogui.click(x=773, y=747)
+    pyautogui.click(x=1119, y=1063)
 
+
+
+    # clicando na flecha para baixar na nuvem
     time.sleep(2)
-    pyautogui.click(x=678, y=81)
+    pyautogui.click(x=942, y=80)
+
+
+
+    # baixando pelo icone de nuvem
     time.sleep(2)   
-    pyautogui.click(x=618, y=95)
+    pyautogui.click(x=892, y=97)
 
 
+
+    # Pesquisando o nome do cliente
     time.sleep(3)
-    pyautogui.write(nam)
+    pyautogui.write(f'{nam}')
     time.sleep(2)
     pyautogui.press('enter')
 
 
 
-
-
-    time.sleep(9)
-    pyautogui.click(x=1346, y=418)
-
-
-
-
+    # Fechando janelas inutei de visulização 
+    time.sleep(11)
+    pyautogui.click(x=1891, y=88)
+    time.sleep(2)
+    pyautogui.click(x=1890, y=579)
 
 
 
+    # Novo documento
     time.sleep(3)
-    pyautogui.click(x=408, y=171)
+    pyautogui.click(x=593, y=171)
     time.sleep(1)
-    pyautogui.click(x=408, y=171)
-    pyautogui.click(x=408, y=171)
+    pyautogui.click(x=593, y=171)
+    time.sleep(1)
+    pyautogui.click(x=593, y=171)
     time.sleep(2)
 
 
-    pyautogui.click(x=402, y=193)
+    # Documento
+    pyautogui.click(x=627, y=201)
 
 
 
-    time.sleep(3)
-    pyautogui.click(x=845, y=246)
+
+#     # #-----------------------------
+
+
+
+
+    # Colocando documento no sitema para lançamento 
+    time.sleep(4)
+    pyautogui.click(x=1141, y=390)
     time.sleep(0.5)
-    pyautogui.click(x=845, y=246)
-    time.sleep(3)
+    pyautogui.click(x=1141, y=390)
+    time.sleep(4)
 
 
 
-    # #-----------------------------
 
-
-    pyautogui.click(x=726, y=311)
+    # pegando arquivo da nuvem
+    pyautogui.click(x=1010, y=463)
     time.sleep(0.5)
     pyautogui.hotkey('enter')
     time.sleep(0.8) 
 
 
-    pyautogui.click(x=745, y=279)
+    # clicando no nome 
+    pyautogui.click(x=1021, y=425)
     time.sleep(0.8)
 
 
-
+    # copiando e colando o nome do sujeito no lugar certo 
     pyautogui.hotkey('ctrl', 'c')
     time.sleep(0.8)
-    pyautogui.click(x=679, y=262)
+    pyautogui.click(x=1019, y=410)
     time.sleep(0.8)
     pyautogui.hotkey('ctrl', 'v')
     time.sleep(0.8)
@@ -145,25 +165,26 @@ def executar():
 
 
 
-
-    pyautogui.click(x=722, y=389)
+    # campo do ano 
+    pyautogui.click(x=1007, y=539)
 
     time.sleep(0.8)
     pyautogui.write(ano)
 
-
-    pyautogui.click(x=904, y=753)
+    # empressora para apagar as coisas
+    pyautogui.click(x=1249, y=1063)
     
     for i in range(vezes):
         time.sleep(0.8)
-        pyautogui.click(x=54, y=181)
+        pyautogui.click(x=53, y=183)
         time.sleep(0.5)
-        pyautogui.click(x=54, y=181)  
+        pyautogui.click(x=53, y=183)  
         time.sleep(0.5)
-        pyautogui.click(x=690, y=413) 
+        pyautogui.click(x=974, y=572) 
 
+    #   voltando ao navegador
     time.sleep(0.8)
-    pyautogui.click(x=776, y=745)
+    pyautogui.click(x=1134, y=1052)
 
 
     # time.sleep(0.5)

@@ -103,8 +103,8 @@ def executar():
 
 
     # Fechando janelas inutei de visulização 
-    time.sleep(9)
-    pyautogui.click(x=1891, y=88)
+    time.sleep(11)
+    # pyautogui.click(x=1891, y=88)
     time.sleep(1)
     pyautogui.click(x=1890, y=579)
 
@@ -132,11 +132,11 @@ def executar():
 
 
     # Colocando documento no sitema para lançamento 
-    time.sleep(3)
+    time.sleep(4)
     pyautogui.click(x=1141, y=390)
-    time.sleep(0.5)
+    time.sleep(1)
     pyautogui.click(x=1141, y=390)
-    time.sleep(3)
+    time.sleep(4)
 
 
 
