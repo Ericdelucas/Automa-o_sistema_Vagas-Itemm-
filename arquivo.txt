@@ -1,0 +1,4 @@
+python .\Correção_Vagas.py
+
+
+.\.venv\Scripts\Activate.ps1 
